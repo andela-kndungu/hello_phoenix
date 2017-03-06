@@ -20,6 +20,9 @@ defmodule HelloPhoenix.Router do
 
     # Adding a hello world page
     get "/hello", HelloController, :index
+
+    # More complex route
+    get "/hello/:messenger", HelloController, :show
   end
 
   # Other scopes may use custom stacks.
